@@ -18,7 +18,7 @@ doit() {
 	  FIRST=$(echo ${line} | cut -d ' ' -f 1)
 	  if 	[[ "$FIRST" == "Title:" ]] ; then
 #	  	#echo $line
-		line=$(echo "$line" | sed "s/Title: /Title: STRIPPED-/gI")
+		line=$(echo "$line" | sed "s/Title: /Title: STRIPPED-/gI")	
 
 #	  	line="Title: WW3 v3.0.7 $NAME"
 	  fi
